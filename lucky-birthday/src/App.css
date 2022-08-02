@@ -1,0 +1,112 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  color: white;
+  height: 100vh;
+  font-family: monospace;
+  overflow: hidden;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.title {
+  font-size: 3rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.input {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  color: #61dafb;
+}
+.date__label,
+.lucky__number__label {
+  font-size: 1.2rem;
+}
+
+input {
+  background-color: black;
+  color: #61dafb;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+  width: 15rem;
+
+  box-shadow: 0rem 0.1rem 1.5rem aqua;
+}
+
+.check__button {
+  color: #61dafb;
+  background-color: black;
+  padding: 0.4rem;
+  border: white 0.1rem solid;
+  font-size: 1rem;
+  margin-top: 1rem;
+  box-shadow: 0rem 0rem 1rem currentColor;
+  transition: all 150ms ease-out;
+}
+.check__button:hover {
+  box-shadow: 0rem 0rem 2rem currentColor;
+  transform: translate(0, -0.2rem);
+}
+
+.watermark {
+  font-size: 0.8rem;
+  align-self: flex-end;
+  color: #61dafb;
+  text-shadow: #61dafb 0.1rem 0.1rem 1rem;
+}
+.output__div {
+  margin-top: 2rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.message {
+  font-size: 1.5rem;
+  font-family: monospace;
+  background-color: black;
+  color: #61dafb;
+  border: #61dafb solid 0.1rem;
+  padding: 1rem;
+  width: 80%;
+  height: 2rem;
+}
